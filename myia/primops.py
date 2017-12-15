@@ -17,3 +17,16 @@ class Add(Primitive):
     """Scalar addition."""
 
     pass
+
+
+class If(Primitive):
+    """An if-else expression.
+
+    This is a special primitive which takes 3 values: A boolean and two
+    anonymous functions without parameters (thunks). This primitive will
+    execute one of the two functions, depending on the boolean value, and
+    return the result.
+
+    """
+
+    pass
